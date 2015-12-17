@@ -18,39 +18,52 @@ There are several ways to control the robot, the most usual is the wireless mode
 
 * Once you are connected to corega, you have to log to HOAP robot through telnet. Open a terminal and follow the instructions:
 
+```
  $ telnet 10.59.145.197
  login: guest
  password: guest
-
  $ su
  password: default
+```
 
 * Now you are inside the robot, you have to initialize the encoders. The relative encoders will try to reach their origin, if you get an error, don't panic, do it again.
+
+```
  $ cd /usr/local/hoap3/data
  $ sh start.sh
+```
 
 * Finally you can send a trajectory to the robot.
+
+```
  $ sh walk.sh
+```
 
 * Or you can move its head.
 
+```
  $ ../bin/sendone
  command:1,3,22,e,15
  command:1,3,22,e,75
-
+```
 
 ## Stopping the robot 
 * To stop the robot first you have to stop the servos.
+```
  $ svoff
+```
 * Then you have to shut down the internal computer of the robot.
+```
  $ poff
+```
 * The robot eyes start to shine and then turn off. In this moment the internal computer of the robot is shutted down. 
 * Finally you have to switch off the '''motor power''' and then the '''logic power'''. Change the order may cause damage to the robot.
 
 
 ## Collection of trajectories 
 All the trajectories are stored in data folder. To send a trajectory to the robot we use the instruction sendseq (for more details see the manual in docs folder).
-    $ ../bin/sendseq < m03.csv
-
+```
+$ ../bin/sendseq < m03.csv
+```
 
 
