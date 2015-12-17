@@ -67,4 +67,4 @@ All the trajectories are stored in data folder. To send a trajectory to the robo
 $ ../bin/sendseq < m03.csv
 ```
 
-
+For more information please visit my [blog](http://miguelgfierro.com) or my [youtube channel](https://www.youtube.com/user/ciruselvirus)
