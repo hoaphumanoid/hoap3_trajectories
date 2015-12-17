@@ -14,6 +14,7 @@ There are several ways to control the robot, the most usual is the wireless mode
 * You have to connect to HOAP wifi router, called corega. To do it you may log in the HOAP PC or connect from your own laptop. If you connect from your own laptop, skip this step, to start HOAP PC:
 
  login: root
+
  password: default
 
 * Once you are connected to corega, you have to log to HOAP robot through telnet. Open a terminal and follow the instructions:
