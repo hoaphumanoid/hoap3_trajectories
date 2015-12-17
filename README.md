@@ -1,6 +1,6 @@
 # Trajectories for the humanoid robot HOAP-3
 
-A set of movement trajectories developed for the humanoid robot HOAP-3
+A set of movement trajectories developed for the humanoid robot HOAP-3 during my [PhD thesis](http://miguelgfierro.com/docs/gonzalez-fierro2014thesis.pdf). 
 
 ## Starting the robot
 There are several ways to control the robot, the most usual is the wireless mode. 
